@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    top: 0;
+    padding: 20px;
+}
+
+.header hr{
+    margin-top: 20px;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.header span{
+    margin-left: 50px;
+    font-size: 24px;
+}
+
+.btn-container{
+    float: right;
+}
+
+.header button{
+    margin-right: 50px;
+    font-size: 16px;
+    padding: 2.5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+} 
+
+#sku-error, #name-error, #price-error, #productType-error, #size-error, #weight-error, #height-error, #width-error, #length-error{
+  margin-left: 20px;
+  color: red;
+}
+
+#product-list {
+  margin: 0 50px 0 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+.container {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  width: 270px;
+  max-width: 270px;
+  height: 150px;
+  max-height: 150px;
+  border: 2px solid black;
+  line-height: 20px;
+}
+
+.container p {
+  text-align: center;
+  text-justify: center;
+}
+
+.delete-checkbox {
+  position: absolute;
+}
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.footer hr{
+    margin-bottom: 20px;
+    border: 1.5px solid black;
+    background-color: black;
+}
+
+#product-add {
+    margin-top: 60px;
+    font-size: 18px;
+  }
+  
+  #product-add span {
+    display: block;
+    margin-bottom: 20px;
+  }
+  
+  #product-add input[type="text"],
+  select {
+    font-size: 18px;
+  }
+  
+  select {
+    margin-top: 30px;
+    height: 27px;
+  }
+  
+  #product-add span label {
+    display: inline-block;
+    width: 150px;
+  }
+
+  #hint {
+    margin-top: 30px;
+    font-style: italic;
+  }
+  
+  .mainProductAdd {
+      margin: 50px;
+  }
+
+  button:active{
+    transform: translateY(2px);
+    border-color: red;
+  }
+
+  @media only screen and (max-width: 1088px) {
+    #product-list {
+      -ms-grid-columns: 50% 50%;
+          grid-template-columns: 50% 50%;
+    }
+  }
